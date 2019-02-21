@@ -26,6 +26,6 @@
 
 0 0 * 2 5 bash /home/jendralhoki/sisop2019/modul1/soalnomor1/nature/script.sh
 
-2-30/6 * * * * bash /home/jendralhoki/sisop2019/soalnomor5/5.sh
+2-30/6 * * * * bash /home/jendralhoki/sisop2019/soalnomor5/soal5.sh
 
 
