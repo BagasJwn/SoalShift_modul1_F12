@@ -22,9 +22,9 @@
 # m h  dom mon dow   command
 
 
-14 14 14 2 * bash /home/jendralhoki/sisop2019/modul1/soalnomor1/nature/script.sh
+14 14 14 2 * bash /home/jendralhoki/sisop2019/modul1/soalnomor1/nature/soal1.sh
 
-0 0 * 2 5 bash /home/jendralhoki/sisop2019/modul1/soalnomor1/nature/script.sh
+0 0 * 2 5 bash /home/jendralhoki/sisop2019/modul1/soalnomor1/nature/soal1.sh
 
 2-30/6 * * * * bash /home/jendralhoki/sisop2019/soalnomor5/soal5.sh
 
