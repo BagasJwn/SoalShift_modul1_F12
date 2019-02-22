@@ -28,4 +28,5 @@
 
 2-30/6 * * * * bash /home/jendralhoki/sisop2019/soalnomor5/soal5.sh
 
+0 * * * * bash /home/jendralhoki/sisop2019/soalnomor4/soal4.sh
 
