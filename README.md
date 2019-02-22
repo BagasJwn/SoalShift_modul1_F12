@@ -37,15 +37,15 @@ Yang dilakukan adalah menggabungkan quantity semua jenis barang per negara pada 
 
 
 
-If($7 == “2012) {   		      # agar data yang disort hanya pada tahun 2012
+If(arr7 == “2012) {   		      # agar data yang disort hanya pada tahun 2012
 
-Total [$1] = total [$1] + $10 	# array untuk mentotalkan jumlah quantity per negara
+Total [arr[1]] = total [arr[1]] + arr[10] 	# array untuk mentotalkan jumlah quantity per negara
 
-If (total[$1] > max) {		    # fungsi untuk mencari jumlah quantity paling banyak
+If (quantity[x] > max) {		    # fungsi untuk mencari jumlah quantity paling banyak
 
-max = total[$1]			# setelah itu max bernilai total[$1]
+maxq = quantity[x]			# setelah itu max bernilai total[$1]
 
-negara = $1			# setelah itu negara bernilai negara di kolom pertama yang memiliki quantity terbanyak.				
+country = 			# setelah itu negara bernilai negara di kolom pertama yang memiliki quantity terbanyak.				
 setelah mendapatkan isi “negara” dan “max” di outputkan dengan format :
 	
 	“print country, "with the sum of quantity:", maxq
@@ -58,17 +58,17 @@ Lalu di bash no2.sh
 Data yang dibutuhkan : Product line, dan quantitynya per tahun 2012. 
 Variabel yang ada : 
 
-Prod1=”a”			 # Nama productline dengan quantity tertinggi
+p1=”a”			 # Nama productline dengan quantity tertinggi
 
-Prod2=”b”			 # Nama productline dengan quantity tertinggi ke -2
+p2=”a”			 # Nama productline dengan quantity tertinggi ke -2
 
-Prod3= “c”			 # Nama productline dengan quantity tertinggi ke -3
+p3=“a”			 # Nama productline dengan quantity tertinggi ke -3
 
-Maxprod1=0		    	 # Quantity prod1
+maxp1=0		    	 # Quantity prod1
 
-Maxprod2=0			 # Quantity prod2
+maxp2=0			 # Quantity prod2
 
-Maxprod3=0			 # Quantity prod3
+maxp3=0			 # Quantity prod3
 
 Dengan asumsi Poin A telah selesai, maka Product line hanya pada negara “United States” di tahun 2012
 
@@ -77,13 +77,13 @@ Fungsi If sama seperti 2A ditambah asumsi “United States” sebagai negara pal
 Untuk pencarian 3 productline tertinggi dilakukan hal dibawah ini :
 
     1.   for(i in maxprod)     		
-If pertama ( if (maxprod[i] . maxprod1){ ) untuk mencari productline tertinggi
+If pertama ( if (productline[x] > maxp1){ ) untuk mencari productline tertinggi
 Dengan syntax diatas maka yang terisi terakhir dan terbesar adalah data prod1.
     
-    2. else if (maxprod[i] > maxprod2) 
+    2. else if (productline[x] > maxp2) 
 Kondisi dimana data yang baru diproses lebih kecil dari maxprod1 namun lebih besar dari maxprod2. Dengan syntax diatas maka yang terisi terakhir dan terbesar adalah data prod2.
 
-    3. else if (maxprod[i] > maxprod3) 
+    3. else if (productline[x] > maxp3) 
 Kondisi dimana data yang baru diproses lebih kecil dari maxprod1 namun lebih besar dari maxprod3. Dengan syntax diatas maka yang terisi terakhir dan terbesar adalah data prod3.
 
 Semua data sudah dapat dengan tepat, di outputkan dengan :
@@ -97,17 +97,17 @@ print "3.", p3, "with the sum of quantity as big as: ", maxp3
 Dengan asumsi 3 Productline tertinggi sudah ditemukan dari no 2B
 Variabel yang dibutuhkan = 
 
-Proda=”a”			# Nama produk dengan quantity tertinggi ke- 1
+Prod1=”a”			# Nama produk dengan quantity tertinggi ke- 1
 
-Prodb=”a”			# Nama produk dengan quantity tertinggi ke -2
+Prod2=”a”			# Nama produk dengan quantity tertinggi ke -2
 
-Prodc= “a”			# Nama produk dengan quantity tertinggi ke -3
+Prod3=“a”			# Nama produk dengan quantity tertinggi ke -3
 
-Maxproda=0		# Quantity prod1
+Maxprod1=0		# Quantity prod1
 
-Maxprodb=0		# Quantity prod2
+Maxprod2=0		# Quantity prod2
 
-Maxprodc=0		# Quantity prod3
+Maxprod3=0		# Quantity prod3
 
 Prinsip kerjanya sama seperti 2A.Perbedaannya di 2C ini product line yang di targetnya
 
